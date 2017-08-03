@@ -6,7 +6,7 @@ RUN apk --update --no-cache add python3 python3-dev apache2 apache2-dev  wget ca
 RUN ln -s pip3 /usr/bin/pip 
 RUN pip install -U pip setuptools wheel 
 
-RUN apk --no-cache add sqlite mysql-client mariadb-dev
+RUN apk --no-cache add sqlite mysql-client mariadb-dev jpeg-dev
 RUN pip install -U pip django mysqlclient sqlite3client pgsql
 
 # mod_wsgi compilation
